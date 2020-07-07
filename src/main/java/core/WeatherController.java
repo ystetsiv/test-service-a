@@ -19,7 +19,7 @@ public class WeatherController {
     }
 
     @GetMapping("/client/{clientId}")
-    public Weather getClient(@PathVariable Long clientId) {
+    public Weather getClient(@PathVariable Long clientId) throws Exception {
         return weatherService.get(clientId);
     }
 }

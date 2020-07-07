@@ -13,6 +13,7 @@ public class Weather {
     private String country;
     private String firstName;
     private String lastName;
+    private Integer temperature;
 
     public Long getId() {
         return id;
@@ -52,5 +53,13 @@ public class Weather {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public Integer getTemperature() {
+        return temperature;
+    }
+
+    public void setTemperature(Integer temperature) {
+        this.temperature = temperature;
     }
 }

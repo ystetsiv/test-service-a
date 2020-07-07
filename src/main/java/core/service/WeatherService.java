@@ -9,7 +9,7 @@ import java.util.List;
 public interface WeatherService {
 
     List<Weather> load();
-    Weather get(Long id);
+    Weather get(Long id) throws Exception;
     Weather post(Weather client);
 
 }
